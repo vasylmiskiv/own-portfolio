@@ -10,8 +10,8 @@ const HeroSection = () => {
 
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center py-48 md:flex-row md:space-x-20 max-sm:py-16">
-        <div className="md:w-1/3">
+      <div className="flex flex-col text-center pt-40 pb-28 items-center justify-center md:py-48 md:flex-row md:space-x-20">
+        <div className="max-sm:px-5 md:w-1/3">
           <Image
             src="/profile-photo.png"
             width={350}
@@ -24,7 +24,7 @@ const HeroSection = () => {
         </div>
         <div className="md:w-3/5">
           <h1 className="mb-5 text-5xl font-bold">Hi there, I&#39;m Vasyl</h1>
-          <p className="mb-10 text-xl">
+          <p className="mb-10 text-lg text-justify md:text-xl">
             I am a{" "}
             <span className="text-green-800 font-bold">
               full-stack developer{" "}
