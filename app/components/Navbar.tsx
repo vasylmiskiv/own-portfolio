@@ -1,5 +1,3 @@
-"use client";
-
 import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
 import { NAV_ITEMS } from "../constants/constants";

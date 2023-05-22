@@ -17,8 +17,6 @@ interface IProjectItem {
   link: string;
 }
 
-// props
-
 interface ISlideUpProps {
   offset?: string;
   children?: ReactNode;

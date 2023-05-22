@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="flex flex-col text-center pt-32 pb-36 md:pt-48 items-center justify-center md:flex-row md:space-x-20">
         <div className="max-sm:px-5 md:w-1/3">
           <Image
-            src="/profile-photo.png"
+            src="/profile-photo.jpg"
             width={350}
             height={350}
             alt="profile-photo"
