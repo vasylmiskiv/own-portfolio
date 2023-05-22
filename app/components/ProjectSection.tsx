@@ -6,7 +6,7 @@ import SlideUp from "./SlideUp";
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="py-16 md:py-20">
+    <section id="projects" className="pt-16 pb-2 md:py-20">
       <h1 className="text-center font-bold text-4xl">Projects</h1>
       <div className="w-6 md:mb-10 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
       <div className="flex flex-col space-y-20 md:space-y-28">
@@ -27,7 +27,9 @@ const ProjectSection = () => {
                 </div>
                 <div className="md:w-1/2 my-5 flex flex-col justify-between">
                   <div>
-                    <div className="md:text-2xl font-bold">{project.name}</div>
+                    <div className="mb-5 md:text-2xl font-bold">
+                      {project.name}
+                    </div>
                     <p>{project.description}</p>
                   </div>
                   <div className="flex flex-row justify-end space-x-4 mr-auto">

@@ -78,4 +78,20 @@ export const PROJECTS: Array<IProjectItem> = [
     github: "https://github.com",
     link: "https://google.com",
   },
+  {
+    name: "Realtime Chat with Socket.io",
+    description: "",
+    image: "/projects/project-realtime-chat.png",
+    isImageDark: true,
+    github: "https://github.com",
+    link: "https://google.com",
+  },
+  {
+    name: "MVP GraphQL Project management app",
+    description: "",
+    image: "/projects/project-mvpmanagement.png",
+    isImageDark: true,
+    github: "https://github.com",
+    link: "https://google.com",
+  },
 ];

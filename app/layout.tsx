@@ -1,8 +1,9 @@
 "use client";
+import { ThemeProvider } from "next-themes";
 
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import { ThemeProvider } from "next-themes";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Vasyl Miskiv",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
