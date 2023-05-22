@@ -1,12 +1,18 @@
 import React from "react";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import {
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+  AiOutlineMail,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+
+import { FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
-      <hr className="w-full h-0.5 mx-auto mt-8 border-0"></hr>
-      <div className="mx-auto p-4 flex flex-col text-center md:flex-row md:justify-between">
-        <div className="mb-5 flex flex-row items-center justify-center space-x-5">
+    <footer className="mx-auto max-w-3xl py-8 px-4 sm:px-6 md:max-w-5xl">
+      <div className="mx-auto flex flex-col justify-around md:items-center text-center md:flex-row md:justify-between">
+        <div className="flex flex-row justify-center space-x-5 max-sm:mb-5">
           <a
             href="https://github.com/vasylmiskiv"
             rel="noreferrer"
@@ -14,7 +20,7 @@ const Footer = () => {
           >
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointe"
-              size={30}
+              size={36}
             />
           </a>
 
@@ -25,11 +31,18 @@ const Footer = () => {
           >
             <AiOutlineLinkedin
               className="hover:-translate-y-1 transition-transform cursor-pointer"
-              size={30}
+              size={36}
+            />
+          </a>
+
+          <a href="https://t.me/vmiskiv" rel="noreferrer" target="_blank">
+            <FaTelegram
+              className="hover:-translate-y-1 transition-transform cursor-pointer"
+              size={32}
             />
           </a>
         </div>
-        <div className="mb-5 flex flex-row items-center justify-center space-x-1">
+        <div className="flex flex-row items-center justify-center space-x-1">
           © {new Date().getFullYear()} Vasyl Miskiv
           <a href="/" className="hover:underline"></a>
         </div>

@@ -61,10 +61,6 @@ const Navbar = () => {
                 <RiMoonFill size={25} color="black" />
               </button>
             )}
-            <div className="flex space-x-5">
-              <button>En</button>
-              <button>Ukr</button>
-            </div>
           </div>
         </div>
       </div>

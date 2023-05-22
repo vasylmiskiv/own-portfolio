@@ -14,18 +14,18 @@ const ProjectSection = () => {
           <div key={i}>
             <SlideUp offset="-300px 0px -300px 0px">
               <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:p-6 rounded-lg md:flex-row md:space-x-12">
-                <div className="md:w-1/2 mb-5 shadow-lg overflow-hidden rounded-xl">
+                <div className="md:w-1/2 shadow-lg overflow-hidden rounded-xl">
                   <Link href={project.link} target="_blank">
                     <Image
                       src={project.image}
                       alt="project"
-                      width={700}
-                      height={700}
-                      className="w-full h-full object-cover transition-transform duration-500 transform scale-100 hover:scale-105"
+                      width={1000}
+                      height={1000}
+                      className="object-cover transition-transform duration-500 transform scale-100 hover:scale-105"
                     />
                   </Link>
                 </div>
-                <div className="mb-10 md:w-1/2 md:my-5 flex flex-col justify-between">
+                <div className="md:w-1/2 flex flex-col py-5 justify-between">
                   <div>
                     <div className="mb-5 md:text-2xl font-bold">
                       {project.name}
