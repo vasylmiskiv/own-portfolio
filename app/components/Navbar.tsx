@@ -13,11 +13,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header
-      className={`w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 border-b ${
-        currentTheme === "light" ? `border-gray-200` : "border-slate-800"
-      }`}
-    >
+    <header className="w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 border-b">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between md:py-3 max-sm:py-6">
@@ -67,6 +63,10 @@ const Navbar = () => {
                 <RiMoonFill size={25} color="black" />
               </button>
             )}
+            <div className="flex space-x-5">
+              <button>En</button>
+              <button>Ukr</button>
+            </div>
           </div>
         </div>
       </div>

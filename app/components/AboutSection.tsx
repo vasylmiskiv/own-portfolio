@@ -3,8 +3,8 @@ import { SKILLS } from "../constants/constants";
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center  font-bold text-4xl">About Me</h1>
+      <div className="md:py-16">
+        <h1 className="text-center font-bold text-4xl">About Me</h1>
         <div className="w-6 md:mb-14 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
         <div className="flex items-stretch justify-center md:space-x-8 max-sm:flex-col">
           <div className="md:w-1/2 max-sm:mb-16">
@@ -19,13 +19,11 @@ const AboutSection = () => {
               developer from Kyiv.
             </p>
             <br />
-            <p className="text-lg">graduation</p>
-            <br />
             <p className="text-lg text-justify">
-              I have a passion for sports, techno music, fitness, chess, books,
-              traveling, learning new technologies and applying them to real
-              projects. I am always seeking new experiences and love to keep
-              myself engaged and learning new things.
+              I have a passion for sports, fitness, business, chess, books,
+              techno music, traveling, learning new technologies and applying
+              them to real projects. I am always seeking new experiences and
+              love to keep myself engaged and learning new things.
             </p>
           </div>
           <div className="md:w-1/2">

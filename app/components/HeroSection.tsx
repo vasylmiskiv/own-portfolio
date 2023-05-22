@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
@@ -10,20 +11,22 @@ const HeroSection = () => {
 
   return (
     <section id="home">
-      <div className="flex flex-col text-center pt-40 pb-28 items-center justify-center md:py-48 md:flex-row md:space-x-20">
+      <div className="flex flex-col text-center pt-32 pb-36 md:pt-48 items-center justify-center md:flex-row md:space-x-20">
         <div className="max-sm:px-5 md:w-1/3">
           <Image
             src="/profile-photo.png"
             width={350}
             height={350}
             alt="profile-photo"
-            className={`mx-auto mb-10 rounded-full ${
-              theme === "light" ? `border border-gray-300` : `border-none`
-            } unselectable-image pointer-events-none select-none`}
+            className={`mx-auto mb-10 rounded-full border border-gray-200 unselectable-image pointer-events-none select-none ${
+              theme === "dark" && `border-none`
+            } `}
           />
         </div>
         <div className="md:w-3/5">
-          <h1 className="mb-5 text-5xl font-bold">Hi there, I&#39;m Vasyl</h1>
+          <h1 className="mb-5 text-3xl md:text-5xl font-bold">
+            Hi there, I&#39;m Vasyl
+          </h1>
           <p className="mb-10 text-lg text-justify md:text-xl">
             I am a{" "}
             <span className="text-green-800 font-bold">
@@ -47,7 +50,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-row justify-center">
+      <div className="mb-14 flex flex-row justify-center">
         <Link
           to="about"
           activeClass="active"
