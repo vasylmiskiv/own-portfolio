@@ -18,7 +18,7 @@ const HeroSection = () => {
             width={350}
             height={350}
             alt="profile-photo"
-            className={`mx-auto mb-10 rounded-full border border-gray-200 unselectable-image pointer-events-none select-none ${
+            className={`mx-auto mb-10 rounded-xl border border-gray-200 unselectable-image pointer-events-none select-none ${
               theme === "dark" && `border-none`
             } `}
           />

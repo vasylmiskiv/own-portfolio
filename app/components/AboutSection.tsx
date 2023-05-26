@@ -30,7 +30,7 @@ const AboutSection = () => {
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               My Skills
             </h1>
-            <div className="flex flex-wrap flex-row justify-center md:justify-start max-sm:justify-between">
+            <div className="flex flex-wrap flex-row justify-center md:justify-start max-sm:justify-center">
               {SKILLS.map((skill, i) => (
                 <p
                   key={i}

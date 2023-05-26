@@ -42,10 +42,13 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="flex flex-row items-center justify-center space-x-1">
-          © {new Date().getFullYear()} Vasyl Miskiv
-          <a href="/" className="hover:underline"></a>
+        <div className="flex flex-col items-center justify-center space-x-1">
+          <div>© Vasyl Miskiv</div>
+          <div> {new Date().getFullYear()}</div>
         </div>
+        <a href="mailto:vasylmiskiv@gmail.com" className="hover:underline">
+          vasylmiskiv@gmail.com
+        </a>
       </div>
     </footer>
   );
