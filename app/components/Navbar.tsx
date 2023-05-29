@@ -10,6 +10,11 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
 
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
   return (
     <header className="w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 border-b">
       <div className="justify-between md:items-center md:flex">
@@ -46,21 +51,10 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            {currentTheme === "dark" ? (
-              <button
-                className="bg-slate-100 px-2 rounded-xl max-sm:absolute right-0 bottom-8"
-                onClick={() => setTheme("light")}
-              >
-                <RiSunLine size={25} color="black" />
-              </button>
-            ) : (
-              <button
-                className="bg-slate-100 px-2 rounded-xl max-sm:absolute right-0 bottom-8"
-                onClick={() => setTheme("dark")}
-              >
-                <RiMoonFill size={25} color="black" />
-              </button>
-            )}
+            <label className="switch">
+              <input type="checkbox" onChange={() => toggleTheme()} />
+              <span className="slider"></span>
+            </label>
           </div>
         </div>
       </div>

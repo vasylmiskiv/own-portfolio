@@ -20,5 +20,13 @@ interface IProjectItem {
 interface ISlideUpProps {
   offset?: string;
   children?: ReactNode;
-  // any props that come into the component
+}
+
+interface IExperienceItem {
+  role: string;
+  organization: string;
+  location: string;
+  period: string;
+  description: string[];
+  image: string;
 }

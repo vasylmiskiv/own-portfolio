@@ -20,7 +20,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p className="text-lg text-justify">
-              I have a passion for sports, fitness, business, chess, books,
+              I have a passion for programming, sports, business, chess, books,
               techno music, traveling, learning new technologies and applying
               them to real projects. I am always seeking new experiences and
               love to keep myself engaged and learning new things.

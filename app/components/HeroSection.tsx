@@ -5,6 +5,7 @@ import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
 
 import { HiArrowDown } from "react-icons/hi";
+import { calcExp } from "../utils/calcExp";
 
 const HeroSection = () => {
   const { theme } = useTheme();
@@ -32,21 +33,27 @@ const HeroSection = () => {
             <span className="text-green-800 font-bold">
               full-stack developer{" "}
             </span>
-            with 2 years of commercial experience. I am specializing in the
-            development of single-page and full-stack web applications. I am
-            passionate about taking on new challenges and working on interesting
-            projects. Let's collaborate to bring innovative ideas to life!
+            with {calcExp()} years of commercial experience. I am specializing
+            in the development of single-page and full-stack web applications. I
+            am passionate about taking on new challenges and working on
+            interesting projects. Let's collaborate to bring innovative ideas to
+            life!
           </p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-8 py-4 rounded-lg bg-green-700 cursor-pointer transition-all duration-200 hover:bg-green-800"
+            className=""
             activeClass="active"
             spy={true}
             smooth={true}
             offset={-100}
             duration={500}
           >
-            Projects
+            <button className="learn-more" id="button-projects">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
+              </span>
+              <span className="button-text">Projects</span>
+            </button>
           </Link>
         </div>
       </div>

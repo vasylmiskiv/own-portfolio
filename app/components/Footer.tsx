@@ -10,8 +10,8 @@ import { FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mx-auto max-w-3xl py-8 px-4 sm:px-6 md:max-w-5xl">
-      <div className="mx-auto flex flex-col justify-around md:items-center text-center md:flex-row md:justify-between">
+    <footer className="mx-auto max-w-3xl p-5 sm:px-6 md:max-w-5xl">
+      <div className="mb-5 mx-auto flex flex-col justify-around md:items-center text-center md:flex-row md:justify-between">
         <div className="flex flex-row justify-center space-x-5 max-sm:mb-5">
           <a
             href="https://github.com/vasylmiskiv"
@@ -42,13 +42,14 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="flex flex-col items-center justify-center space-x-1">
-          <div>© Vasyl Miskiv</div>
-          <div> {new Date().getFullYear()}</div>
-        </div>
+
         <a href="mailto:vasylmiskiv@gmail.com" className="hover:underline">
           vasylmiskiv@gmail.com
         </a>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <div>© Vasyl Miskiv</div>
+        {new Date().getFullYear()}
       </div>
     </footer>
   );

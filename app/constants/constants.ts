@@ -4,12 +4,16 @@ export const NAV_ITEMS: Array<INavItem> = [
     page: "home",
   },
   {
-    label: "About",
-    page: "about",
+    label: "Experience",
+    page: "experience",
   },
   {
     label: "Projects",
     page: "projects",
+  },
+  {
+    label: "About",
+    page: "about",
   },
 ];
 
@@ -33,8 +37,43 @@ export const SKILLS: Array<ISkillItem> = [
   { id: 17, name: "PostgreSQL" },
   { id: 18, name: "Git" },
   { id: 19, name: "Postman" },
-  { id: 20, name: "RES API" },
+  { id: 20, name: "REST API" },
   { id: 21, name: "Swagger" },
+];
+
+export const EXPERIENCE: Array<IExperienceItem> = [
+  {
+    role: "Frontend developer",
+    organization: "Inquire / EarthLink.com",
+    location: "Atlanta, GA",
+    period: "Jun 2022 – Apr 2023 (11 mos)",
+    description: [],
+    image: "",
+  },
+  {
+    role: "Full Stack Developer",
+    organization: "Freelance",
+    location: "Kyiv, Ukraine",
+    period: "Feb 2021 – Jun 2022 (1 yr 5 mos)",
+    description: [],
+    image: "",
+  },
+  {
+    role: "Accountant",
+    organization: "Self-employed",
+    location: "Kyiv, Ukraine",
+    period: "Feb 2021 – May 2022 (1 yr 4 mos)",
+    description: [],
+    image: "",
+  },
+  {
+    role: "Accounting Manager / Audit assistant",
+    organization: "INNOVA Consulting GROUP",
+    location: "Kyiv, Ukraine",
+    period: "Feb 2021 – Jun 2022 (3 yrs 3 mos)",
+    description: [],
+    image: "",
+  },
 ];
 
 export const PROJECTS: Array<IProjectItem> = [
@@ -59,39 +98,39 @@ export const PROJECTS: Array<IProjectItem> = [
     description: "eCommerce platform built with the MERN stack & Redux",
     image: "/projects/project-ecommerce.png",
     isImageDark: false,
-    github: "https://github.com",
-    link: "https://google.com",
+    github: "https://github.com/vasylmiskiv/ecommerce-client",
+    link: "https://vmiskivecommerce.vercel.app",
   },
   {
     name: "FinanceAI",
     description: "",
     image: "/projects/project-financeai.png",
     isImageDark: true,
-    github: "https://github.com",
-    link: "https://google.com",
+    github: "https://github.com/vasylmiskiv/financeAI",
+    link: "https://vmiskiv-finance-app.onrender.com",
   },
   {
     name: "ChatGPT",
     description: "",
     image: "/projects/project-chatgpt.png",
     isImageDark: true,
-    github: "https://github.com",
-    link: "https://google.com",
+    github: "https://github.com/vasylmiskiv/chatgpt-messenger",
+    link: "https://vmiskivchatgpt-messenger.vercel.app",
   },
   {
     name: "Realtime Chat with Socket.io",
     description: "",
     image: "/projects/project-realtime-chat.png",
     isImageDark: true,
-    github: "https://github.com",
-    link: "https://google.com",
+    github: "https://github.com/vasylmiskiv/fullstack-chat-socketio",
+    link: "https://vmiskivchatsocketio.onrender.com/",
   },
   {
     name: "MVP GraphQL Project management app",
     description: "",
     image: "/projects/project-mvpmanagement.png",
     isImageDark: true,
-    github: "https://github.com",
-    link: "https://google.com",
+    github: "https://github.com/vasylmiskiv/projectmngmnt-apollo-graphql",
+    link: "https://vmiskivgraphqlprojects.onrender.com/",
   },
 ];
