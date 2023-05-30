@@ -3,7 +3,7 @@ import { SKILLS } from "../constants/constants";
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="md:py-16">
+      <div className="py-20 md:py-40">
         <h1 className="text-center font-bold text-4xl">About Me</h1>
         <div className="w-6 md:mb-14 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
         <div className="flex items-stretch justify-center md:space-x-8 max-sm:flex-col">
@@ -34,7 +34,7 @@ const AboutSection = () => {
               {SKILLS.map((skill, i) => (
                 <p
                   key={i}
-                  className="bg-gray-200 px-4 rounded-lg py-2 mr-2 m-2 text-gray-500 cursor-pointer hover:bg-gray-300 max-sm:px-3"
+                  className="bg-gray-200 px-4 rounded-lg py-2 mr-2 m-2 text-gray-500 cursor-pointer hover:bg-gray-300 max-sm:px-3 max-sm:text-sm"
                 >
                   {skill.name}
                 </p>

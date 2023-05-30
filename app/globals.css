@@ -7,6 +7,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .unselectable-image {
@@ -102,7 +104,7 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #aaaaac;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -141,7 +143,7 @@ button:hover .button-text {
 
 /* The slider */
 .slider {
-  --background: #e5e7eb;
+  --background: #2c2c2c;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -161,13 +163,13 @@ button:hover .button-text {
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #000000;
+  box-shadow: inset 8px -4px 0px 0px #d1ce0f;
   background: var(--background);
   transition: 0.5s;
 }
 
 input:checked + .slider {
-  background-color: #e5e7eb;
+  background-color: #5c87dd;
 }
 
 input:checked + .slider:before {

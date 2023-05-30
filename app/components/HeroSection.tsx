@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <section id="home">
-      <div className="flex flex-col text-center pt-32 pb-36 md:pt-48 items-center justify-center md:flex-row md:space-x-20">
+      <div className="flex flex-col text-center pt-32 pb-20 md:pb-40 md:pt-40 items-center justify-center md:flex-row md:space-x-20">
         <div className="max-sm:px-5 md:w-1/3">
           <Image
             src="/profile-photo.jpg"
@@ -30,7 +30,7 @@ const HeroSection = () => {
           </h1>
           <p className="mb-10 text-lg text-justify md:text-xl">
             I am a{" "}
-            <span className="text-green-800 font-bold">
+            <span className="text-teal-500 font-bold">
               full-stack developer{" "}
             </span>
             with {calcExp()} years of commercial experience. I am specializing
@@ -57,9 +57,9 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <div className="mb-14 flex flex-row justify-center">
+      <div className="flex flex-row justify-center">
         <Link
-          to="about"
+          to="experience"
           activeClass="active"
           spy={true}
           smooth={true}

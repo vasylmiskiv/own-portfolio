@@ -13,15 +13,24 @@ const Navbar = () => {
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
+    setNavbar(false);
   };
 
   return (
     <header className="w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 border-b">
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between md:py-3 max-sm:py-6">
+          <div className="flex items-center justify-between md:py-1 max-sm:py-6">
             <div className="md:py-5 md:block">
-              <div className="text-2xl font-bold">Vasyl Miskiv</div>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-800 to-teal-500 cursor-pointer"
+              >
+                Vasyl Miskiv
+              </Link>
             </div>
             <div className="md:hidden">
               <button className="mt-1" onClick={() => setNavbar(!navbar)}>
@@ -40,13 +49,13 @@ const Navbar = () => {
               <Link
                 key={i}
                 to={item.page}
-                activeClass="active"
+                activeClass="text-teal-500"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={500}
                 onClick={() => setNavbar(!navbar)}
-                className="block lg:inline-block text-black-800 cursor-pointer hover:text-green-800 max-sm:font-semibold"
+                className="block lg:inline-block text-black-800 cursor-pointer font-semibold hover:underline max-sm:font-semibold transition-all duration-200"
               >
                 {item.label}
               </Link>

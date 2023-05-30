@@ -3,7 +3,7 @@ import Tabs from "./Tabs";
 const Experience = () => {
   return (
     <div className="container mx-auto" id="experience">
-      <section className="mx-4 py-16 md:py-48 xl:py-52">
+      <section className="mx-4 py-16 md:pt-40 md:pb-2">
         <div className="container flex flex-col items-center justify-center mx-auto">
           <h1 className="text-center font-bold text-4xl">
             {" "}

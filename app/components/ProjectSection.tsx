@@ -6,8 +6,8 @@ import SlideUp from "./SlideUp";
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="pt-16 pb-2 md:py-20">
-      <h1 className="text-center font-bold text-4xl">Projects</h1>
+    <section id="projects" className="pt-16 pb-2 md:pt-40 md:pb-2">
+      <h1 className="text-center font-bold text-4xl">My Projects</h1>
       <div className="w-6 md:mb-10 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
       <div className="flex flex-col space-y-14 md:space-y-28">
         {PROJECTS.map((project, i) => (
