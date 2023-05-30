@@ -37,8 +37,8 @@ const Footer = () => {
 
           <a href="https://t.me/vmiskiv" rel="noreferrer" target="_blank">
             <FaTelegram
-              className="hover:-translate-y-1 transition-transform cursor-pointer"
-              size={32}
+              className="mt-[3px] hover:-translate-y-1 transition-transform cursor-pointer"
+              size={31}
             />
           </a>
         </div>

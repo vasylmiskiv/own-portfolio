@@ -33,12 +33,14 @@ export const SKILLS: Array<ISkillItem> = [
   { id: 13, name: "Firebase" },
   { id: 14, name: "Mongoose" },
   { id: 15, name: "Prisma" },
-  { id: 16, name: "MongoDB" },
-  { id: 17, name: "PostgreSQL" },
-  { id: 18, name: "Git" },
-  { id: 19, name: "Postman" },
-  { id: 20, name: "REST API" },
-  { id: 21, name: "Swagger" },
+  { id: 16, name: "Sequelize" },
+  { id: 17, name: "TypeORM" },
+  { id: 18, name: "MongoDB" },
+  { id: 19, name: "PostgreSQL" },
+  { id: 20, name: "Git" },
+  { id: 21, name: "Postman" },
+  { id: 22, name: "REST API" },
+  { id: 23, name: "Swagger" },
 ];
 
 export const EXPERIENCE: Array<IExperienceItem> = [
@@ -81,7 +83,7 @@ export const EXPERIENCE: Array<IExperienceItem> = [
   },
   {
     role: "Accounting Manager / Audit assistant",
-    organization: "INNOVA Consulting GROUP",
+    organization: "INNOVA Consulting Group",
     location: "Kyiv, Ukraine",
     period: "Feb 2021 – Jun 2022 (3 yrs 3 mos)",
     description: [

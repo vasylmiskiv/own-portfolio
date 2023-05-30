@@ -18,9 +18,9 @@ export default function Tabs() {
                 onClick={() => setOpenTab(tab.organization)}
                 className={`w-full text-left transition-all duration-200 ${
                   openTab === tab.organization
-                    ? "bg-teal-500 font-semibold rounded-lg font-mono text-neutral-100 md:text-base"
-                    : "hover:bg-slate-100 font-mono rounded-sm md:text-base"
-                } inline-block px-2 py-2 font-mono rounded-sm text-gray-600 md:text-base`}
+                    ? "bg-teal-500 font-semibold rounded-lg text-neutral-100 md:text-base"
+                    : "hover:bg-slate-100  rounded-sm md:text-base"
+                } inline-block px-2 py-2  rounded-sm text-gray-600 md:text-base`}
               >
                 {tab.organization}
               </button>
@@ -51,8 +51,8 @@ export default function Tabs() {
               {tab.description.map((bullet, idx) => {
                 return (
                   <li
-                    className={`text-base md:text-lg list-disc ${
-                      theme === "light" ? `text-slate-600` : `text-neutral-300`
+                    className={`mb-[5px] text-base md:text-lg list-disc text-slate-600 ${
+                      theme === "dark" && `text-stone-300`
                     }`}
                     key={idx}
                   >
