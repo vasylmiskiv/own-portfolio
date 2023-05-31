@@ -1,3 +1,4 @@
+import { HiOutlineDownload } from "react-icons/hi";
 import { SKILLS } from "../constants/constants";
 
 const AboutSection = () => {
@@ -19,12 +20,26 @@ const AboutSection = () => {
               developer from Kyiv.
             </p>
             <br />
-            <p className="text-lg text-justify">
+            <p className="mb-10 text-lg text-justify">
               I have a passion for programming, sports, business, chess, books,
               techno music, traveling, learning new technologies and applying
               them to real projects. I am always seeking new experiences and
               love to keep myself engaged and learning new things.
             </p>
+            <div className="flex justify-center items-center">
+              <a
+                className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
+                // href="../assets/Resume.pdf"
+                // target="_blank"
+                // rel="noopener noreferrer"
+                // download="Resume"
+              >
+                <div className="flex gap-4 items-center">
+                  <div>Download CV</div>
+                  <HiOutlineDownload size={18} className="mb-1" />
+                </div>
+              </a>
+            </div>
           </div>
           <div className="md:w-1/2">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">

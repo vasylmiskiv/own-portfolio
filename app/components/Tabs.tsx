@@ -51,9 +51,7 @@ export default function Tabs() {
               {tab.description.map((bullet, idx) => {
                 return (
                   <li
-                    className={`mb-[5px] text-base md:text-lg list-disc text-slate-600 ${
-                      theme === "dark" && `text-stone-300`
-                    }`}
+                    className={`mb-[5px] text-base md:text-lg list-disc dark:text-neutral-300`}
                     key={idx}
                   >
                     {bullet}

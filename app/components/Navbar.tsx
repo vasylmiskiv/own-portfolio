@@ -1,19 +1,24 @@
 import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
 import { NAV_ITEMS } from "../constants/constants";
-import { useState } from "react";
-import { RiSunLine, RiMoonFill } from "react-icons/ri";
+import { useEffect, useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
+  const { theme, setTheme } = useTheme();
   const [navbar, setNavbar] = useState(false);
+
+  useEffect(() => {
+    setTheme("light");
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    setNavbar(false);
+
+    if (navbar) {
+      setNavbar(false);
+    }
   };
 
   return (
@@ -27,7 +32,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-800 to-teal-500 cursor-pointer"
+                className="text-2xl font-extrabold text-teal-500 cursor-pointer"
               >
                 Vasyl Miskiv
               </Link>
@@ -49,19 +54,21 @@ const Navbar = () => {
               <Link
                 key={i}
                 to={item.page}
-                activeClass="text-teal-500"
+                activeClass="text-teal-500 hover:text-teal-600"
                 spy={true}
                 smooth={true}
-                offset={-100}
-                duration={500}
                 onClick={() => setNavbar(!navbar)}
-                className="block lg:inline-block text-black-800 cursor-pointer font-semibold hover:underline max-sm:font-semibold transition-all duration-200"
+                className="block lg:inline-block text-black-800 cursor-pointer font-semibold hover:text-teal-500 max-sm:font-semibold transition-all duration-200"
               >
                 {item.label}
               </Link>
             ))}
             <label className="switch">
-              <input type="checkbox" onChange={() => toggleTheme()} />
+              <input
+                type="checkbox"
+                checked={theme === "dark" ? false : true}
+                onChange={() => toggleTheme()}
+              />
               <span className="slider"></span>
             </label>
           </div>

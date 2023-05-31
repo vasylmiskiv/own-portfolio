@@ -43,7 +43,10 @@ const Footer = () => {
           </a>
         </div>
 
-        <a href="mailto:vasylmiskiv@gmail.com" className="hover:underline">
+        <a
+          href="mailto:vasylmiskiv@gmail.com"
+          className=" hover:text-teal-500 transition-all duration-500"
+        >
           vasylmiskiv@gmail.com
         </a>
       </div>

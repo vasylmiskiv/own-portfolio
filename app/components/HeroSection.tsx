@@ -19,16 +19,14 @@ const HeroSection = () => {
             width={350}
             height={350}
             alt="profile-photo"
-            className={`mx-auto mb-10 rounded-xl border border-gray-200 unselectable-image pointer-events-none select-none ${
-              theme === "dark" && `border-none`
-            } `}
+            className={`mx-auto mb-10 rounded-xl border border-gray-200 unselectable-image pointer-events-none select-none dark:border-none`}
           />
         </div>
         <div className="md:w-3/5">
           <h1 className="mb-5 text-3xl md:text-5xl font-bold">
             Hi there, I&#39;m Vasyl
           </h1>
-          <p className="mb-10 text-lg text-justify md:text-xl">
+          <p className="mb-10 text-lg text-justify md:text-xl dark:text-neutral-200">
             I am a{" "}
             <span className="text-teal-500 font-bold">
               full-stack developer{" "}
@@ -42,7 +40,7 @@ const HeroSection = () => {
           <Link
             to="projects"
             className=""
-            activeClass="active"
+            activeClass=""
             spy={true}
             smooth={true}
             offset={-100}

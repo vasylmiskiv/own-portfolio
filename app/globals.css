@@ -4,11 +4,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
 
+html,
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   width: 100%;
+}
+
+[data-theme="dark"],
+[data-theme="dark"] body {
+  color: #fff;
+  background: #706f6f;
 }
 
 .unselectable-image {
@@ -62,7 +69,7 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #14b8a6;
   border-radius: 1.625rem;
 }
 
@@ -104,7 +111,6 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #aaaaac;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -124,8 +130,6 @@ button:hover .button-text {
   color: #fff;
 }
 
-/* Toggler */
-/* The switch - the box around the slider */
 .switch {
   font-size: 17px;
   position: relative;
@@ -169,11 +173,10 @@ button:hover .button-text {
 }
 
 input:checked + .slider {
-  background-color: #5c87dd;
+  background-color: #cecece;
 }
 
 input:checked + .slider:before {
   transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #e9ec07;
-  border: 1px solid rgb(179, 179, 179);
+  box-shadow: inset 15px -4px 0px 15px #fff34b;
 }
