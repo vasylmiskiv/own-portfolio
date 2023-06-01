@@ -29,10 +29,10 @@ const AboutSection = () => {
             <div className="flex justify-center items-center">
               <a
                 className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
-                // href="../assets/Resume.pdf"
-                // target="_blank"
-                // rel="noopener noreferrer"
-                // download="Resume"
+                href="/documents/Vasyl_Miskiv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Resume"
               >
                 <div className="flex gap-4 items-center">
                   <div>Download CV</div>
