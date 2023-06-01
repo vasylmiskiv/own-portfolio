@@ -48,16 +48,14 @@ export default function Tabs() {
               {`${tab.period},   ${tab.location}`}
             </p>
             <ul className="ml-4">
-              {tab.description.map((bullet, idx) => {
-                return (
-                  <li
-                    className={`mb-[5px] text-base md:text-lg list-disc dark:text-neutral-300`}
-                    key={idx}
-                  >
-                    {bullet}
-                  </li>
-                );
-              })}
+              {tab.description.map((point, idx) => (
+                <li
+                  className={`mb-[10px] text-base md:text-lg text-justify md:text-start list-disc dark:text-neutral-300`}
+                  key={idx}
+                >
+                  {point}
+                </li>
+              ))}
             </ul>
           </div>
         ))}

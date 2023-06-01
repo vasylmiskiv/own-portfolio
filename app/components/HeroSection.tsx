@@ -31,7 +31,7 @@ const HeroSection = () => {
             <span className="text-teal-500 font-bold">
               full-stack developer{" "}
             </span>
-            with {calcExp()} years of commercial experience. I am specializing
+            with more than 2 years of commercial experience. I am specializing
             in the development of single-page and full-stack web applications. I
             am passionate about taking on new challenges and working on
             interesting projects. Let's collaborate to bring innovative ideas to

@@ -4,7 +4,7 @@ import { SKILLS } from "../constants/constants";
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="py-20 md:py-40">
+      <div className="py-20 md:py-52">
         <h1 className="text-center font-bold text-4xl">About Me</h1>
         <div className="w-6 md:mb-14 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
         <div className="flex items-stretch justify-center md:space-x-8 max-sm:flex-col">
@@ -20,7 +20,7 @@ const AboutSection = () => {
               developer from Kyiv.
             </p>
             <br />
-            <p className="mb-10 text-lg text-justify">
+            <p className="mb-16 md:mb-10 text-lg text-justify">
               I have a passion for programming, sports, business, chess, books,
               techno music, traveling, learning new technologies and applying
               them to real projects. I am always seeking new experiences and
@@ -34,7 +34,7 @@ const AboutSection = () => {
                 rel="noopener noreferrer"
                 download="Resume"
               >
-                <div className="flex gap-4 items-center">
+                <div className="flex gap-3 items-center">
                   <div>Download CV</div>
                   <HiOutlineDownload size={18} className="mb-1" />
                 </div>
