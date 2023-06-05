@@ -173,7 +173,7 @@ button:hover .button-text {
 }
 
 input:checked + .slider {
-  background-color: #cecece;
+  background-color: #d8d8d8;
 }
 
 input:checked + .slider:before {

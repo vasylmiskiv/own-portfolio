@@ -1,7 +1,7 @@
 export const NAV_ITEMS: Array<INavItem> = [
   {
     label: "Home",
-    page: "home",
+    page: "hero",
   },
   {
     label: "Experience",
@@ -47,7 +47,7 @@ export const EXPERIENCE: Array<IExperienceItem> = [
   {
     role: "Frontend developer",
     organization: "Inquire / EarthLink.com",
-    location: "Atlanta, GA (Remotely)",
+    location: "Atlanta, GA, the U.S. (Remotely)",
     period: "Jun 2022 – Apr 2023 (11 mos)",
     description: [
       "Collaborate with cross-functional teams to develop and implement new features, maintain and improve existing applications and create projects from scratch.",
@@ -97,7 +97,22 @@ export const EXPERIENCE: Array<IExperienceItem> = [
 export const PROJECTS: Array<IProjectItem> = [
   {
     name: "Social media",
-    description: "",
+    description:
+      "Fullstack social media application written with MERN stack, Redux toolkit, TailwindCSS",
+    techStack: [
+      "Typescript",
+      "React",
+      "Redux tookit",
+      "TailwindCSS",
+      "Formik",
+      "Yup",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "Multer",
+      "Bcrypt",
+      "JWT",
+    ],
     image: "/projects/project-social.png",
     isImageDark: true,
     github: "https://github.com/vasylmiskiv/social-media",
@@ -105,7 +120,14 @@ export const PROJECTS: Array<IProjectItem> = [
   },
   {
     name: "PromptAI",
-    description: "",
+    description:
+      "Fullstack application with ChatGPT prompt saver and authorization",
+    techStack: [
+      "Typescript",
+      "Next.js, NextAuth, TailwindCSS",
+      "Mongoose",
+      "MongoDB",
+    ],
     image: "/projects/project-promptai.png",
     isImageDark: false,
     github: "https://github.com/vasylmiskiv/next13-fs-ai-app",
@@ -113,7 +135,22 @@ export const PROJECTS: Array<IProjectItem> = [
   },
   {
     name: "Ecommerce store",
-    description: "eCommerce platform built with the MERN stack & Redux",
+    description:
+      "Fullstack eCommerce platform built with the MERN stack & Redux",
+    techStack: [
+      "Typescript",
+      "React",
+      "Redux",
+      "Redux thunk",
+      "React-bootstrap",
+      "TailwindCSS",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "Multer",
+      "Bcrypt",
+      "JWT",
+    ],
     image: "/projects/project-ecommerce.png",
     isImageDark: false,
     github: "https://github.com/vasylmiskiv/ecommerce-client",
@@ -121,7 +158,19 @@ export const PROJECTS: Array<IProjectItem> = [
   },
   {
     name: "FinanceAI",
-    description: "",
+    description:
+      "Fullstack dashboard application built with the MERN stack & Redux toolkit",
+    techStack: [
+      "Typescript",
+      "React",
+      "Redux",
+      "Redux toolkit",
+      "MaterialUI",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "Multer",
+    ],
     image: "/projects/project-financeai.png",
     isImageDark: true,
     github: "https://github.com/vasylmiskiv/financeAI",
@@ -129,7 +178,8 @@ export const PROJECTS: Array<IProjectItem> = [
   },
   {
     name: "ChatGPT",
-    description: "",
+    description: "ChatGPT application with OAuth, Firebase, and OpenAI API",
+    techStack: ["Typescript", "Next.js", "OAuth", "Firebase", "OpenAI API"],
     image: "/projects/project-chatgpt.png",
     isImageDark: true,
     github: "https://github.com/vasylmiskiv/chatgpt-messenger",
@@ -137,7 +187,8 @@ export const PROJECTS: Array<IProjectItem> = [
   },
   {
     name: "Realtime Chat with Socket.io",
-    description: "",
+    description: "Fullstack web chat with separate, unique rooms and users",
+    techStack: ["Typescript", "React", "Redux", "Express", "SocketIO"],
     image: "/projects/project-realtime-chat.png",
     isImageDark: true,
     github: "https://github.com/vasylmiskiv/fullstack-chat-socketio",
@@ -145,7 +196,15 @@ export const PROJECTS: Array<IProjectItem> = [
   },
   {
     name: "MVP GraphQL Project management app",
-    description: "",
+    description: "GraphQL fullstack application with MERN Stack",
+    techStack: [
+      "Typescript",
+      "React",
+      "GraphqQL",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+    ],
     image: "/projects/project-mvpmanagement.png",
     isImageDark: true,
     github: "https://github.com/vasylmiskiv/projectmngmnt-apollo-graphql",

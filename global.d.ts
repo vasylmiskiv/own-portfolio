@@ -11,6 +11,7 @@ interface ISkillItem {
 interface IProjectItem {
   name: string;
   description: string;
+  techStack: string[];
   image: string;
   isImageDark: boolean;
   github: string;

@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-center select-none">
             <div>© Vasyl Miskiv</div>
             {new Date().getFullYear()}
           </div>

@@ -4,8 +4,8 @@ import { SKILLS } from "../constants/constants";
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="py-20 md:py-52">
-        <h1 className="text-center font-bold text-4xl">About Me</h1>
+      <div className="py-20 md:px-7 md:py-52">
+        <h1 className="text-center font-bold text-4xl select-none">About Me</h1>
         <div className="w-6 md:mb-14 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
         <div className="flex items-stretch justify-center md:space-x-8 max-sm:flex-col">
           <div className="md:w-1/2 max-sm:mb-16">
@@ -45,7 +45,7 @@ const AboutSection = () => {
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               My Skills
             </h1>
-            <div className="flex flex-wrap flex-row justify-center md:justify-start max-sm:justify-center">
+            <div className="flex flex-wrap flex-row justify-center xl:justify-start max-sm:justify-center">
               {SKILLS.map((skill, i) => (
                 <p
                   key={i}

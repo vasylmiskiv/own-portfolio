@@ -2,15 +2,13 @@
 
 import React, { useState } from "react";
 import { EXPERIENCE } from "../constants/constants";
-import { useTheme } from "next-themes";
 
 export default function Tabs() {
   const [openTab, setOpenTab] = useState("Inquire / EarthLink.com");
-  const { systemTheme, theme, setTheme } = useTheme();
 
   return (
-    <div className="container flex flex-col items-start text-left justify-center md:p-6 md:space-x-10 md:flex-row">
-      <div className="container md:w-1/4">
+    <div className="flex flex-col items-start text-left xl:justify-center md:p-6 md:space-x-10 md:flex-row">
+      <div className="container w-full md:w-2/5 xl:w-1/4">
         <ul className="overflow-x-auto flex flex-row text-left wrap space-x-4 md:flex-col md:space-x-0 md:space-y-4">
           {EXPERIENCE.map((tab) => (
             <li key={tab.organization}>
@@ -29,7 +27,7 @@ export default function Tabs() {
         </ul>
       </div>
 
-      <div className="container mt-8 md:w-1/2 md:mt-0">
+      <div className="container mt-8 w-full md:w-3/5 xl:w-1/2 md:mt-0">
         {EXPERIENCE.map((tab) => (
           <div
             key={tab.organization}

@@ -25,10 +25,10 @@ const Navbar = () => {
     <header className="w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 border-b">
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between md:py-1 max-sm:py-6">
-            <div className="md:py-5 md:block">
+          <div className="flex items-center justify-between md:py-1">
+            <div className="py-5 md:py-5 ">
               <Link
-                to="home"
+                to="hero"
                 spy={true}
                 smooth={true}
                 duration={500}
