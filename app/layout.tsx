@@ -1,16 +1,9 @@
 "use client";
 import { ThemeProvider } from "next-themes";
 
-import { Metadata } from "next/types";
-
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-export const metadata: Metadata = {
-  title: "Vasyl Miskiv",
-  description: "development, web, fullstack development, software engineer",
-};
 
 export default function RootLayout({
   children,
