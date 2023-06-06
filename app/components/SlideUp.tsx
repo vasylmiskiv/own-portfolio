@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useRef, ReactNode } from "react";
 
 export default function SlideUp({ children, offset = "0px" }: ISlideUpProps) {

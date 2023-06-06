@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { EXPERIENCE } from "../constants/constants";
 
@@ -16,9 +14,9 @@ export default function Tabs() {
                 onClick={() => setOpenTab(tab.organization)}
                 className={`w-full text-left transition-all duration-200 ${
                   openTab === tab.organization
-                    ? "bg-teal-500 font-semibold rounded-lg text-neutral-100 md:text-base"
-                    : "hover:bg-slate-100  rounded-sm md:text-base"
-                } inline-block px-2 py-2  rounded-sm text-gray-600 md:text-base`}
+                    ? "bg-teal-500 font-semibold rounded text-neutral-100 md:text-base"
+                    : "hover:bg-slate-100 rounded md:text-base"
+                } inline-block px-2 py-2 rounded text-gray-500 md:text-base`}
               >
                 {tab.organization}
               </button>

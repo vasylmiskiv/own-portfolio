@@ -18,10 +18,10 @@ const ProjectSection = () => {
       <div className="flex flex-col">
         {PROJECTS.map((project, i) => (
           <div key={i}>
-            <SlideUp offset="-400px 0px -400px 0px">
+            <SlideUp offset="-275px 0px -275px 0px">
               <div className="py-10">
                 <div className="mb-10 flex flex-col animate-slideUpCubiBezier animation-delay-2 rounded-lg md:flex-row md:space-x-12">
-                  <div className="md:w-1/2 shadow-lg overflow-hidden rounded-xl max-sm:mb-6">
+                  <div className="md:w-1/2 shadow-lg overflow-hidden rounded-xl max-sm:mb-10">
                     <Link href={project.link} target="_blank">
                       <Image
                         src={project.image}
@@ -33,15 +33,19 @@ const ProjectSection = () => {
                     </Link>
                   </div>
                   <div className="flex flex-col justify-between md:w-1/2">
-                    <div>
-                      <div className="mb-5 font-bold  transition-all duration-200 cursor-pointer text-2xl dark:text-neutral-200 hover:text-teal-500 dark:hover:text-teal-500">
+                    <div className="flex flex-col gap-4">
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        className="font-bold transition-all duration-200 cursor-pointer text-2xl dark:text-neutral-200 hover:text-teal-500 dark:hover:text-teal-500"
+                      >
                         {project.name}
-                      </div>
-                      <p className="mb-2">{project.description}</p>
+                      </Link>
+                      <p>{project.description}</p>
                       <div className="flex flex-wrap gap-2 text-sm">
                         {project.techStack.map((tech) => (
                           <div
-                            className="bg-gray-200 flex py-1 px-2 items-center rounded hover:bg-gray-300 cursor-pointer"
+                            className="bg-gray-200 flex py-1 px-2 items-center rounded hover:bg-gray-300 cursor-pointer dark:text-gray-500"
                             key={tech}
                           >
                             {tech}
@@ -51,7 +55,7 @@ const ProjectSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mr-10 flex flex-row justify-end space-x-4">
+                <div className="mr-5 flex flex-row justify-end space-x-4">
                   <Link href={project.github} target="_blank">
                     <BsGithub
                       size={28}

@@ -1,9 +1,11 @@
-"use client";
-import { ThemeProvider } from "next-themes";
-
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+
+export const metadata = {
+  title: "Vasyl Miskiv",
+  description: "Fullstack software engineer portfolio",
+  keywords:
+    "web development, web design, javascript, typescript, react, next.js, node, software engineer",
+};
 
 export default function RootLayout({
   children,
@@ -12,13 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

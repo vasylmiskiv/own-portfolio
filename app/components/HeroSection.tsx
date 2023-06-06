@@ -1,15 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
-import { useTheme } from "next-themes";
 
 import { HiArrowDown } from "react-icons/hi";
-import { calcExp } from "../utils/calcExp";
 
 const HeroSection = () => {
-  const { theme } = useTheme();
-
   return (
     <section id="hero">
       <div className="flex flex-col text-center pt-32 pb-20 md:px-7 md:pb-40 md:pt-40 items-center justify-center md:flex-row md:space-x-20">
