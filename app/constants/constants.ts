@@ -124,7 +124,9 @@ export const PROJECTS: Array<IProjectItem> = [
       "Fullstack application with ChatGPT prompt saver and authorization",
     techStack: [
       "Typescript",
-      "Next.js, NextAuth, TailwindCSS",
+      "Next.js",
+      "NextAuth",
+      "TailwindCSS",
       "Mongoose",
       "MongoDB",
     ],
