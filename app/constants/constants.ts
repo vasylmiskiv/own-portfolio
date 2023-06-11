@@ -138,7 +138,7 @@ export const PROJECTS: Array<IProjectItem> = [
   {
     name: "Ecommerce store",
     description:
-      "Fullstack eCommerce platform built with the MERN stack & Redux",
+      "Fullstack eCommerce platform built with the MERN stack & Redux with admin tool",
     techStack: [
       "Typescript",
       "React",

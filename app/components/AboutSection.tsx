@@ -20,7 +20,7 @@ const AboutSection = () => {
               developer from Kyiv.
             </p>
             <br />
-            <p className="mb-16 md:mb-10 text-lg text-justify">
+            <p className="mb-16 text-lg text-justify">
               I have a passion for programming, sports, business, chess, books,
               techno music, traveling, learning new technologies and applying
               them to real projects. I am always seeking new experiences and

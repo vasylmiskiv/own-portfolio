@@ -23,13 +23,13 @@ const ProjectSection = () => {
                 <div className="mb-10 flex flex-col animate-slideUpCubiBezier animation-delay-2 rounded-lg md:flex-row md:space-x-12">
                   <div className="md:w-1/2 shadow-lg overflow-hidden rounded-xl max-sm:mb-10">
                     <Link href={project.link} target="_blank">
-                      <Image
-                        src={project.image}
-                        alt="project"
-                        width={1200}
-                        height={1200}
-                        className="transition-transform duration-500 transform scale-100 hover:scale-105"
-                      />
+                      <div className="md:h-[250px]">
+                        <img
+                          src={project.image}
+                          alt="project"
+                          className="h-full w-full transition-transform duration-500 transform scale-100 hover:scale-105"
+                        />
+                      </div>
                     </Link>
                   </div>
                   <div className="flex flex-col justify-between md:w-1/2">
