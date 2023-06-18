@@ -1,21 +1,11 @@
-"use client";
-
 import { Link } from "react-scroll/modules";
 
 import { HiArrowDown } from "react-icons/hi";
-import { useEffect, useState } from "react";
+
+import { useWindowSize } from "../hooks/useWindowSize";
 
 const HeroSection = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const updateDimensions = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", updateDimensions);
-    return () => window.removeEventListener("resize", updateDimensions);
-  }, []);
+  const { width } = useWindowSize();
 
   return (
     <section id="hero">
