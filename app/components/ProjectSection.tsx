@@ -11,9 +11,9 @@ const ProjectSection = () => {
         My Projects
       </h1>
       <div className="w-6 md:mb-10 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
-      <div className="mb-10 text-gray-500 text-sm md:w-1/2 text-right ml-auto">
-        *All links work fine. Need to wait a couple of minutes because these
-        projects were deployed on free platforms.
+      <div className="mb-10 text-gray-500 text-sm md:w-1/3 text-right ml-auto">
+        *Need to wait 15-30 seconds because projects were deployed on free cloud
+        platforms.
       </div>
       <div className="flex flex-col">
         {PROJECTS.map((project, i) => (
@@ -72,7 +72,7 @@ const ProjectSection = () => {
               </div>
 
               {PROJECTS[PROJECTS.length - 1] !== project && (
-                <div className="h-[1px] bg-gray-200"></div>
+                <div className="h-[1px] bg-gray-200 dark:bg-gray-800"></div>
               )}
             </SlideUp>
           </div>

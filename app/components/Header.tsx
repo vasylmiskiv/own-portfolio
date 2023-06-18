@@ -6,7 +6,7 @@ import { NAV_ITEMS } from "../constants/constants";
 import { useEffect, useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
-const Navbar = () => {
+const Header = () => {
   const { theme, setTheme } = useTheme();
   const [navbar, setNavbar] = useState(false);
 
@@ -24,11 +24,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 border-b">
+    <header
+      className={`w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 dark:bg-[#161B22]`}
+    >
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between md:py-1">
-            <div className="py-5 md:py-5 ">
+            <div className="py-5 md:py-5">
               <Link
                 to="hero"
                 spy={true}
@@ -80,4 +82,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

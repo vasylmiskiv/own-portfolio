@@ -1,24 +1,26 @@
 "use client";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
 import { ThemeProvider } from "next-themes";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
 import ExperienceSection from "./components/ExperienceSection";
+import Container from "./components/Container";
 
 const Home = () => {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <Navbar />
-      <div className="mx-auto max-w-3xl px-4 max-sm:px-8 md:max-w-5xl">
+      <Header />
+      <Container>
         <HeroSection />
         <ExperienceSection />
         <ProjectSection />
         <AboutSection />
-      </div>
+      </Container>
+
       <Footer />
     </ThemeProvider>
   );

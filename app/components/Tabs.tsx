@@ -12,9 +12,9 @@ export default function Tabs() {
             <li key={tab.organization}>
               <button
                 onClick={() => setOpenTab(tab.organization)}
-                className={`w-full text-left transition-all duration-200 ${
+                className={`w-full text-left font-semibold transition-all duration-200 ${
                   openTab === tab.organization
-                    ? "bg-teal-500 font-semibold rounded text-neutral-100 md:text-base"
+                    ? "bg-teal-500 rounded text-neutral-100 md:text-base"
                     : "hover:bg-slate-100 rounded md:text-base"
                 } inline-block px-2 py-2 rounded text-gray-500 md:text-base`}
               >
@@ -31,7 +31,7 @@ export default function Tabs() {
             key={tab.organization}
             className={tab.organization === openTab ? "block" : "hidden"}
           >
-            <p>
+            <p className="max-sm:mb-2">
               <span className="text-xl md:text-xl font-bold">{tab.role}</span>
 
               <span className="text-xl md:text-xl font-bold text-teal-500">
