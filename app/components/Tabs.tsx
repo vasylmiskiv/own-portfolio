@@ -31,7 +31,7 @@ export default function Tabs() {
             key={tab.organization}
             className={tab.organization === openTab ? "block" : "hidden"}
           >
-            <p className="max-sm:mb-2">
+            <p className="mb-2">
               <span className="text-xl md:text-xl font-bold">{tab.role}</span>
 
               <span className="text-xl md:text-xl font-bold text-teal-500">
@@ -40,7 +40,7 @@ export default function Tabs() {
               </span>
             </p>
 
-            <p className="text-sm md:text-md mb-4">
+            <p className="text-sm text-gray-800 md:text-md mb-4 dark:dark:text-neutral-400">
               {`${tab.period},   ${tab.location}`}
             </p>
             <ul className="ml-4">

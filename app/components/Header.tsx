@@ -10,12 +10,18 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
   const [navbar, setNavbar] = useState(false);
 
+  let isLight = theme === "light" ? true : false;
+
   useEffect(() => {
-    setTheme("light");
+    if (!theme) {
+      setTheme("light");
+    }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
+
+    isLight = !isLight;
     setTheme(newTheme);
 
     if (navbar) {
@@ -58,11 +64,11 @@ const Header = () => {
               <Link
                 key={i}
                 to={item.page}
-                activeClass="text-teal-500 hover:text-teal-600"
+                activeClass="text-teal-600"
                 spy={true}
                 smooth={true}
                 onClick={() => setNavbar(!navbar)}
-                className="block lg:inline-block text-black-800 cursor-pointer font-semibold hover:text-teal-500 max-sm:font-semibold transition-all duration-200"
+                className="block lg:inline-block text-black-800 cursor-pointer font-semibold hover:text-teal-500 max-sm:font-semibold hover:duration-300"
               >
                 {item.label}
               </Link>
@@ -70,7 +76,7 @@ const Header = () => {
             <label className="switch">
               <input
                 type="checkbox"
-                checked={theme === "dark" ? false : true}
+                checked={isLight}
                 onChange={() => toggleTheme()}
               />
               <span className="slider"></span>

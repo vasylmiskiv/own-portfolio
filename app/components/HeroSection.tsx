@@ -1,3 +1,5 @@
+"use client";
+
 import { Link } from "react-scroll/modules";
 
 import { HiArrowDown } from "react-icons/hi";
@@ -43,18 +45,9 @@ const HeroSection = () => {
             offset={-100}
             duration={500}
           >
-            {width > 820 ? (
-              <button className="projects" id="button-projects">
-                <span className="circle" aria-hidden="true">
-                  <span className="icon arrow"></span>
-                </span>
-                <span className="button-text">Projects</span>
-              </button>
-            ) : (
-              <button className="py-3 px-10 font-bold text-white bg-teal-500 uppercase rounded-full">
-                Projects
-              </button>
-            )}
+            <button className="py-3 px-10 font-bold text-white bg-teal-500 uppercase rounded-full hover:bg-teal-600 duration-200 shadow-lg">
+              Projects
+            </button>
           </Link>
         </div>
       </div>
