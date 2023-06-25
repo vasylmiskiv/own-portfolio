@@ -12,7 +12,7 @@ const ProjectSection = () => {
         My Projects
       </h1>
       <div className="w-6 md:mb-10 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
-      <div className="mb-10 text-gray-500 text-sm md:w-1/3 text-right ml-auto">
+      <div className="mb-4 text-gray-500 text-sm md:w-1/2 text-right ml-auto">
         *Need to wait 15-30 seconds because projects were deployed on free cloud
         platforms.
       </div>
@@ -20,9 +20,9 @@ const ProjectSection = () => {
         {PROJECTS.map((project, i) => (
           <div key={i}>
             <SlideUp offset="-275px 0px -275px 0px">
-              <div className="py-10">
+              <div className="py-8">
                 <div className="mb-10 flex flex-col animate-slideUpCubiBezier animation-delay-2 rounded-lg md:flex-row md:space-x-12">
-                  <div className="md:w-1/2 shadow-lg overflow-hidden rounded-xl max-sm:mb-10">
+                  <div className="md:w-1/2 shadow-lg overflow-hidden rounded-xl max-sm:mb-6">
                     <Link href={project.link} target="_blank">
                       <div className="md:h-[250px]">
                         <img
@@ -46,7 +46,7 @@ const ProjectSection = () => {
                       <div className="flex flex-wrap gap-2 text-sm">
                         {project.techStack.map((tech) => (
                           <div
-                            className="bg-gray-200 flex py-1 px-2 items-center rounded hover:bg-gray-300 cursor-pointer dark:text-gray-500"
+                            className="bg-gray-200 flex py-1 px-2 items-center rounded hover:bg-gray-300 cursor-pointer dark:text-gray-600"
                             key={tech}
                           >
                             {tech}

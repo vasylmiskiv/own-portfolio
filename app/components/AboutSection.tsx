@@ -20,7 +20,7 @@ const AboutSection = () => {
               developer from Kyiv.
             </p>
             <br />
-            <p className="mb-16 text-lg text-justify">
+            <p className="mb-10 text-lg text-justify">
               I have a passion for programming, sports, business, chess, books,
               techno music, traveling, learning new technologies and applying
               them to real projects. I am always seeking new experiences and
@@ -49,7 +49,7 @@ const AboutSection = () => {
               {SKILLS.map((skill, i) => (
                 <p
                   key={i}
-                  className="bg-gray-200 px-4 rounded-lg py-2 mr-2 m-2 text-gray-500 cursor-pointer hover:bg-gray-300 max-sm:px-3 max-sm:text-sm"
+                  className="bg-gray-200 px-4 rounded-lg py-2 mr-2 m-2 text-gray-600 cursor-pointer hover:bg-gray-300 max-sm:px-3 max-sm:text-sm"
                 >
                   {skill.name}
                 </p>

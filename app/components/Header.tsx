@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full fixed mx-auto backdrop-blur-sm px-8 shadow-lg top-0 z-50 sm:px-20 dark:bg-[#161B22]`}
+      className={`w-full fixed mx-auto backdrop-blur-sm px-6 shadow-lg top-0 z-50 sm:px-20 dark:bg-[#161B22]`}
     >
       <div className="justify-between md:items-center md:flex">
         <div>
@@ -64,7 +64,7 @@ const Header = () => {
               <Link
                 key={i}
                 to={item.page}
-                activeClass="text-teal-600"
+                activeClass="text-teal-500"
                 spy={true}
                 smooth={true}
                 onClick={() => setNavbar(!navbar)}

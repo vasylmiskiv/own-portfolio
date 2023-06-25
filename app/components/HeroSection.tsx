@@ -45,7 +45,7 @@ const HeroSection = () => {
             offset={-100}
             duration={500}
           >
-            <button className="py-3 px-10 font-bold text-white bg-teal-500 uppercase rounded-full hover:bg-teal-600 duration-200 shadow-lg">
+            <button className="py-3 px-10 font-bold text-white bg-teal-500 uppercase rounded-full hover:bg-teal-600 duration-300 shadow-lg">
               Projects
             </button>
           </Link>

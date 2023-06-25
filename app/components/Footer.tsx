@@ -47,7 +47,7 @@ const Footer = () => {
 
             <a
               href="mailto:vasylmiskiv@gmail.com"
-              className=" hover:text-teal-500 transition-all duration-400"
+              className="hover:text-teal-500 transition-all duration-400 max-sm:text-sm"
             >
               vasylmiskiv@gmail.com
             </a>
