@@ -43,6 +43,11 @@ export const SKILLS: Array<ISkillItem> = [
   { id: 23, name: "Swagger" },
 ];
 
+export const LINKS = {
+  linkCv:
+    "https://docs.google.com/document/d/1KGD7TSwjymGAN5Z309qsoGma5FlTjcqJJ6P4VOjfVws/edit?usp=sharing",
+};
+
 export const EXPERIENCE: Array<IExperienceItem> = [
   {
     role: "Frontend developer",

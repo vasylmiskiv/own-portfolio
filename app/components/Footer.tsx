@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
-import { FaTelegram } from "react-icons/fa";
+import { FaTelegram, FaYoutube } from "react-icons/fa";
 import Container from "./Container";
 
 const Footer = () => {
@@ -35,6 +35,17 @@ const Footer = () => {
 
               <a href="https://t.me/vmiskiv" rel="noreferrer" target="_blank">
                 <FaTelegram
+                  className="mt-[3px] hover:-translate-y-1 transition-transform cursor-pointer"
+                  size={31}
+                />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@VasylMiskiv/streams"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FaYoutube
                   className="mt-[3px] hover:-translate-y-1 transition-transform cursor-pointer"
                   size={31}
                 />

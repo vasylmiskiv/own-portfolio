@@ -8,25 +8,23 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
-  const [navbar, setNavbar] = useState(false);
+  const [isLight, setIsLight] = useState("");
 
-  let isLight = theme === "light" ? true : false;
+  const [navbar, setNavbar] = useState(false);
 
   useEffect(() => {
     if (!theme) {
       setTheme("light");
+    } else {
+      setIsLight(theme);
     }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
+    let changedTheme = isLight === "light" ? "dark" : "light";
 
-    isLight = !isLight;
-    setTheme(newTheme);
-
-    if (navbar) {
-      setNavbar(false);
-    }
+    setIsLight(changedTheme);
+    setTheme(changedTheme);
   };
 
   return (
@@ -73,14 +71,17 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
-            <label className="switch">
-              <input
-                type="checkbox"
-                checked={isLight}
-                onChange={() => toggleTheme()}
-              />
-              <span className="slider"></span>
-            </label>
+
+            {isLight && (
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  checked={isLight === "light"}
+                  onChange={() => toggleTheme()}
+                />
+                <span className="slider"></span>
+              </label>
+            )}
           </div>
         </div>
       </div>

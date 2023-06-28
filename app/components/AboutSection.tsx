@@ -1,7 +1,17 @@
+import { SKILLS, LINKS } from "../constants/constants";
+
+import { ImLoop } from "react-icons/im";
 import { HiOutlineDownload } from "react-icons/hi";
-import { SKILLS } from "../constants/constants";
+import { FiArrowUpRight } from "react-icons/fi";
+import { useState } from "react";
 
 const AboutSection = () => {
+  const [typeCv, setTypeCv] = useState("link");
+
+  const handleChangeLinkType = () => {
+    setTypeCv(typeCv === "link" ? "download" : "link");
+  };
+
   return (
     <section id="about">
       <div className="py-20 md:px-7 md:py-52">
@@ -26,19 +36,43 @@ const AboutSection = () => {
               them to real projects. I am always seeking new experiences and
               love to keep myself engaged and learning new things.
             </p>
-            <div className="flex justify-center items-center">
-              <a
-                className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
-                href="/documents/Vasyl_Miskiv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Resume"
-              >
-                <div className="flex gap-3 items-center">
-                  <div>Download CV</div>
-                  <HiOutlineDownload size={18} className="mb-1" />
+            <div className="flex justify-center items-center gap-5">
+              {typeCv === "link" ? (
+                <div>
+                  <a
+                    className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
+                    href={LINKS.linkCv}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="flex gap-3 items-center">
+                      <div>Open CV Link</div>
+                      <FiArrowUpRight size={18} />
+                    </div>
+                  </a>
                 </div>
-              </a>
+              ) : (
+                <div>
+                  <a
+                    className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
+                    href="/documents/Vasyl_Miskiv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download="Resume"
+                  >
+                    <div className="flex gap-3 items-center">
+                      <div>Download CV</div>
+                      <HiOutlineDownload size={18} className="mb-1" />
+                    </div>
+                  </a>
+                </div>
+              )}
+              <div className="p-1">
+                <ImLoop
+                  className="text-gray-500 hover:text-gray-700 duration-200 cursor-pointer dark:text-gray-400 dark:hover:text-gray-200"
+                  onClick={handleChangeLinkType}
+                />
+              </div>
             </div>
           </div>
           <div className="md:w-1/2">
