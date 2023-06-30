@@ -13,8 +13,8 @@ const ProjectSection = () => {
       </h1>
       <div className="w-6 md:mb-10 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></div>
       <div className="mb-4 text-gray-500 text-sm md:w-1/2 text-right ml-auto">
-        *Need to wait 15-30 seconds because projects were deployed on free cloud
-        platforms.
+        *You need to wait 15-30 seconds for the spinner to spin up, because the
+        servers are deployed on free cloud platforms
       </div>
       <div className="flex flex-col">
         {PROJECTS.map((project, i) => (

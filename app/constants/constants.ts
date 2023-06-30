@@ -101,49 +101,9 @@ export const EXPERIENCE: Array<IExperienceItem> = [
 
 export const PROJECTS: Array<IProjectItem> = [
   {
-    name: "Social media",
+    name: "Ecommerce Store & Authorization & Admin Tools",
     description:
-      "Fullstack social media application written with MERN stack, Redux toolkit, TailwindCSS",
-    techStack: [
-      "Typescript",
-      "React",
-      "Redux tookit",
-      "TailwindCSS",
-      "Formik",
-      "Yup",
-      "Express",
-      "Mongoose",
-      "MongoDB",
-      "Multer",
-      "Bcrypt",
-      "JWT",
-    ],
-    image: "/projects/project-social.png",
-    isImageDark: true,
-    github: "https://github.com/vasylmiskiv/social-media",
-    link: "https://vmiskiv-fssocial-app.onrender.com",
-  },
-  {
-    name: "PromptAI",
-    description:
-      "Fullstack application with ChatGPT prompt saver and authorization",
-    techStack: [
-      "Typescript",
-      "Next.js",
-      "NextAuth",
-      "TailwindCSS",
-      "Mongoose",
-      "MongoDB",
-    ],
-    image: "/projects/project-promptai.png",
-    isImageDark: false,
-    github: "https://github.com/vasylmiskiv/next13-fs-ai-app",
-    link: "https://vmiskiv-promptai.vercel.app",
-  },
-  {
-    name: "Ecommerce store",
-    description:
-      "Fullstack eCommerce platform built with the MERN stack & Redux with admin tool",
+      "MERN eCommerce platform built with the MERN stack & Redux & Admin Tools",
     techStack: [
       "Typescript",
       "React",
@@ -164,7 +124,46 @@ export const PROJECTS: Array<IProjectItem> = [
     link: "https://vmiskivecommerce.vercel.app",
   },
   {
-    name: "FinanceAI",
+    name: "Social Media with Auth",
+    description: "MERN social media application, Redux toolkit & TailwindCSS",
+    techStack: [
+      "Typescript",
+      "React",
+      "Redux tookit",
+      "TailwindCSS",
+      "Formik",
+      "Yup",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "Multer",
+      "Bcrypt",
+      "JWT",
+    ],
+    image: "/projects/project-social.png",
+    isImageDark: true,
+    github: "https://github.com/vasylmiskiv/social-media",
+    link: "https://vmiskiv-fssocial-app.onrender.com",
+  },
+  {
+    name: "PromptAI Promt Bookmars with NextAuth",
+    description:
+      "Next 13 application with ChatGPT prompt saver and authorization",
+    techStack: [
+      "Typescript",
+      "Next.js",
+      "NextAuth",
+      "TailwindCSS",
+      "Mongoose",
+      "MongoDB",
+    ],
+    image: "/projects/project-promptai.png",
+    isImageDark: false,
+    github: "https://github.com/vasylmiskiv/next13-fs-ai-app",
+    link: "https://vmiskiv-promptai.vercel.app",
+  },
+  {
+    name: "FinanceAI Dashboard with Tools",
     description:
       "Fullstack dashboard application built with the MERN stack & Redux toolkit",
     techStack: [
@@ -184,7 +183,7 @@ export const PROJECTS: Array<IProjectItem> = [
     link: "https://vmiskiv-finance-app.onrender.com",
   },
   {
-    name: "ChatGPT",
+    name: "ChatGPT Messenger with OAuth",
     description: "ChatGPT application with OAuth, Firebase, and OpenAI API",
     techStack: ["Typescript", "Next.js", "OAuth", "Firebase", "OpenAI API"],
     image: "/projects/project-chatgpt.png",
@@ -202,7 +201,7 @@ export const PROJECTS: Array<IProjectItem> = [
     link: "https://vmiskivchatsocketio.onrender.com/",
   },
   {
-    name: "MVP GraphQL Project management app",
+    name: "MVP GraphQL Project Management",
     description: "GraphQL fullstack application with MERN Stack",
     techStack: [
       "Typescript",
