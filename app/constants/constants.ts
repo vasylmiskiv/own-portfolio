@@ -46,6 +46,7 @@ export const SKILLS: Array<ISkillItem> = [
 export const LINKS = {
   linkCv:
     "https://docs.google.com/document/d/1KGD7TSwjymGAN5Z309qsoGma5FlTjcqJJ6P4VOjfVws/edit?usp=sharing",
+  youtubeVideoId: "KooBJknQ92g",
 };
 
 export const EXPERIENCE: Array<IExperienceItem> = [
