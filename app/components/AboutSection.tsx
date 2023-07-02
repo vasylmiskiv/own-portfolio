@@ -30,7 +30,7 @@ const AboutSection = () => {
               developer from Kyiv.
             </p>
             <br />
-            <p className="mb-10 text-lg text-justify">
+            <p className="mb-16 text-lg text-justify">
               I have a passion for programming, sports, business, chess, books,
               techno music, traveling, learning new technologies and applying
               them to real projects. I am always seeking new experiences and
@@ -38,34 +38,30 @@ const AboutSection = () => {
             </p>
             <div className="flex justify-center items-center gap-5">
               {typeCv === "link" ? (
-                <div>
-                  <a
-                    className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
-                    href={LINKS.linkCv}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="flex gap-3 items-center">
-                      <div>Open CV Link</div>
-                      <FiArrowUpRight size={18} />
-                    </div>
-                  </a>
-                </div>
+                <a
+                  className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
+                  href={LINKS.linkCv}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex gap-3 items-center">
+                    <div>Open CV Link</div>
+                    <FiArrowUpRight size={18} />
+                  </div>
+                </a>
               ) : (
-                <div>
-                  <a
-                    className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
-                    href="/documents/Vasyl_Miskiv.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download="Resume"
-                  >
-                    <div className="flex gap-3 items-center">
-                      <div>Download CV</div>
-                      <HiOutlineDownload size={18} className="mb-1" />
-                    </div>
-                  </a>
-                </div>
+                <a
+                  className="inline-block gap-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg duration-200 cursor-pointer"
+                  href="/documents/Vasyl_Miskiv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Resume"
+                >
+                  <div className="flex gap-3 items-center">
+                    <div>Download CV</div>
+                    <HiOutlineDownload size={18} className="mb-1" />
+                  </div>
+                </a>
               )}
               <div className="p-1">
                 <ImLoop
