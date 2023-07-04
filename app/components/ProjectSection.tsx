@@ -21,10 +21,10 @@ const ProjectSection = () => {
           <div key={i}>
             <SlideUp offset="-275px 0px -275px 0px">
               <div className="py-8">
-                <div className="mb-10 flex flex-col animate-slideUpCubiBezier animation-delay-2 rounded-lg md:flex-row md:space-x-12">
-                  <div className="md:w-1/2 shadow-lg overflow-hidden rounded-xl max-sm:mb-6">
+                <div className=" mb-10 flex flex-col animate-slideUpCubiBezier animation-delay-2 rounded md:flex-row md:space-x-12">
+                  <div className="md:w-1/2 shadow-lg overflow-hidden rounded max-sm:mb-6">
                     <Link href={project.link} target="_blank">
-                      <div className="md:h-[250px]">
+                      <div className="md:h-[250px] opacity-90 hover:opacity-100 duration-200">
                         <img
                           src={project.image}
                           alt="project"
@@ -56,6 +56,7 @@ const ProjectSection = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="mr-5 flex flex-row justify-end space-x-4">
                   <Link href={project.github} target="_blank">
                     <BsGithub

@@ -9,19 +9,22 @@ import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
 import ExperienceSection from "./components/ExperienceSection";
 import Container from "./components/Container";
+import Socials from "./components/Socials";
 
 const Home = () => {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <Header />
-      <Container>
-        <HeroSection />
-        <ExperienceSection />
-        <ProjectSection />
-        <AboutSection />
-      </Container>
-
-      <Footer />
+      <div className="relative">
+        <Header />
+        <Container>
+          <HeroSection />
+          <ExperienceSection />
+          <ProjectSection />
+          <AboutSection />
+        </Container>
+        <Socials />
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 };

@@ -55,7 +55,7 @@ const AboutSection = () => {
                   href="/documents/Vasyl_Miskiv.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="Resume"
+                  download="Vasyl Miskiv.pdf"
                 >
                   <div className="flex gap-3 items-center">
                     <div>Download CV</div>

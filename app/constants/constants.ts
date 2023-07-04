@@ -53,13 +53,14 @@ export const LINKS = {
 
 export const EXPERIENCE: Array<IExperienceItem> = [
   {
-    role: "Frontend Developer",
+    role: "Frontend Engineer",
     organization: "Inquire / EarthLink.com",
     location: "Atlanta, GA, US",
     period: "Jun 2022 – Apr 2023 (11 mos)",
     description: [
-      "Utilized React and TailwindCSS to design and maintain user interface of several company projects including mail service, account management, portal, CRM systems for customers, MVP applicatons including projects written from scratch.",
+      "Utilized React and TailwindCSS to design and maintain user interface of several company projects including mail service, account management, portal, CRM systems for customers, MVP applicatons.",
       "Maintain and debug legacy code, do code review, develop and implement new features to web applications according to CI/CD pipeline.",
+      "Successfully designed, developed, and deployed applications from scratch",
       "Collaborated with cross-functional teams: Worked closely with product managers, designers, and backend engineers to gather requirements, brainstorm solutions, and ensure seamless integration of frontend components with backend systems.",
       "Developed user interfaces that were optimized for various devices and screen sizes, ensuring a consistent and user-friendly experience across different platforms, including desktop and mobile.",
       "Identified and addressed performance bottlenecks in the frontend codebase, optimized rendering and loading times, and implemented best practices to enhance the overall user experience.",
@@ -69,7 +70,7 @@ export const EXPERIENCE: Array<IExperienceItem> = [
   },
   {
     role: "Full Stack Developer",
-    organization: "Freelance Upwork",
+    organization: "Freelance",
     location: "Kyiv, Ukraine",
     period: "Dec 2020 – Jun 2022 (1 yr 7 mos)",
     description: [

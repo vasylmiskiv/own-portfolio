@@ -8,16 +8,16 @@ const Footer = () => {
   return (
     <footer className="dark:bg-[#161B22]">
       <Container>
-        <div className="mx-auto py-5 md:py-2 px-10 xl:p-5 border-t dark:border-none">
+        <div className="mx-auto py-4 md:py-6 px-10 xl:p-5 border-t dark:border-none">
           <div className="flex flex-col gap-5 md:flex-row items-center">
-            <div className="flex justify-between gap-5">
+            {/* <div className="flex justify-between gap-5">
               <a
                 href="https://github.com/vasylmiskiv"
                 rel="noreferrer"
                 target="_blank"
               >
                 <AiOutlineGithub
-                  className="hover:-translate-y-1 transition-transform cursor-pointe"
+                  className="hover:text-teal-500 hover:duration-200"
                   size={36}
                 />
               </a>
@@ -50,18 +50,19 @@ const Footer = () => {
                   size={31}
                 />
               </a>
-            </div>
+            </div> */}
 
-            <div className="w-full flex flex-col items-center select-none">
-              <div>© {new Date().getFullYear()} Vasyl Miskiv</div>
+            <div className="w-full flex flex-col gap-4 items-center select-none">
+              <a
+                href="mailto:vasylmiskiv@gmail.com"
+                className="hover:text-teal-500 transition-all duration-400 max-sm:text-sm"
+              >
+                vasylmiskiv@gmail.com
+              </a>
+              <div className="max-sm:text-sm">
+                © {new Date().getFullYear()} Vasyl Miskiv
+              </div>
             </div>
-
-            <a
-              href="mailto:vasylmiskiv@gmail.com"
-              className="hover:text-teal-500 transition-all duration-400 max-sm:text-sm"
-            >
-              vasylmiskiv@gmail.com
-            </a>
           </div>
         </div>
       </Container>
